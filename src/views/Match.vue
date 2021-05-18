@@ -166,7 +166,6 @@ import Top from'../components/top'
         background: #29e4f1;
         border-radius: 2.1rem;
         opacity: .1;
-        
     }
     .match-start{
         position: absolute;

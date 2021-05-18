@@ -85,6 +85,7 @@ import Top from'../components/top'
 .detail{
   width: 90%;
 }
+
 img{
   max-width:100%; /*不使用width:100% 是因避免圖片解析度不好，隨父元素被放大時會糊掉*/
   height:auto;
@@ -253,6 +254,11 @@ img{
 
   //filter: brightness(100);
 }
+
+.icon img{
+
+}
+
 
 .qrcode {
   position: relative;
