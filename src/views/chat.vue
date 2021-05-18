@@ -9,7 +9,8 @@
                 <!--标签栏  -->
                 <div class="title">
                     <span class="title_label">当前标签:旅游</span>
-                    <button class="title_btn">返回</button>
+                    <!-- <button class="title_btn" >返回</button> -->
+                    <router-link to="/topics" class="back">返回</router-link>
                 </div>
                 <!--交流栏 -->
                 <div class="chat_content">
@@ -89,6 +90,7 @@
                     </div>
                     <div class="photo" v-show="isPhoto">
                         <i class="icon iconfont icon-tu_pian"></i>
+                        
                         <i class="icon iconfont icon-GIF"></i>
                     </div>
                     <div class="send">
@@ -146,12 +148,27 @@ export default {
         forwordGo(){
             this.showMain = true
             this.showReport = false
+        },
+        toback(){
+
         }
     }
 
 }
 </script>
 <style lang="less" scoped>
+.back{
+    text-decoration: none;
+    width: 90px;
+    height: 40px;
+    background: #fff;
+    border-radius: 30px;
+    font-size: 20px;
+    border: none;
+    color: rgba(128,104,202,.8);
+    cursor: pointer;
+    line-height: 40px;
+}
 #chat{
     position: fixed;
     width: 100%;
@@ -173,13 +190,14 @@ export default {
        }
     }
     .chatMain{
-        height: calc(100vh - 60px);
+        height: calc(100vh - 100px);
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 20px 0;
         .main{
             width: (1810px / (1920px / 1400px));
-            height: (800px / (1080px / 900px));
+            height: calc(100vh - 100px);
             background: rgba(128,104,202,.5);
             box-sizing: border-box;
             border: 2px solid #fff;

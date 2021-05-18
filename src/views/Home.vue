@@ -26,12 +26,12 @@ export default {
 
 <style lang="less" scoped>
 .home{
-    height: 725px;
+   height: calc(100vh);
    background: url('../../static/img/2.jpg'),linear-gradient(to right,#8580FE 20%,#DFA4FF 80%) fixed;
    background-size:100% 100%;
 }
 .mask{
-  height: 725px;
+  height: calc(100vh);
   width: 100%;
   position: absolute;
   background:linear-gradient(to right,#8580FE  20%,#DFA4FF 100%) ;
@@ -43,11 +43,7 @@ export default {
   position: relative;
   background: linear-gradient(to right, #8580FE 60%,#464280);
   opacity: .8;
-  // background-blend-mode: lighten;
-  background-blend-mode: darken
-  // filter: blur(40px);
-  // z-index: 11;
-  // border-right: none;
+  background-blend-mode: darken;
 }
 .nav-right{
   width: 150px;
@@ -57,7 +53,6 @@ export default {
   background: linear-gradient(to left, #CB91DB, #BF88CB 60%,#815C82);
   opacity: .8;
   filter: blur(40px);
-
 }
 .logo{ 
     font-size: 40px;
